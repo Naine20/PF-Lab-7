@@ -1,0 +1,35 @@
+/*A program that asks for the number of hours studied by ten students. It stores the values in an array and print the number of hours of each student. 
+Also print who studied the most*/
+
+Program:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int std=10,i,j,k;
+    int array[std];
+    
+    for(i=0;i<std;i++)
+    {
+        cout<<"Enter your studied Hours: ";
+        cin>>array[i];
+    }
+    
+    for(j=0;j<std;j++)
+    {
+        cout<<"std"<<j<<" Studied hours: "<<array[j]<<endl;
+    }
+    
+    int maximum=0;
+    
+    for(k=0;k<std;k++)
+    {
+        if(array[k]>maximum)
+        {
+            maximum=array[k];
+        }
+    }
+    cout<<endl<<"Maximum studied hours: "<<maximum;
+
+    return 0;
+}
