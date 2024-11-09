@@ -1,0 +1,31 @@
+//A program that asks the user to type seven integers of an array. The program must compute and write how many integers are multiple of five.
+
+Program:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr1[7];
+   int i=0;
+   
+   while(i<7)
+   {
+       cout<<"Enter Index "<<i<<" Integer: ";
+       cin>>arr1[i];
+       i++;
+   }
+   int j;
+   for(j=0;j<7;j++)
+   {
+       if(arr1[j]%5==0)
+       {
+           cout<<endl<<"Index "<<j<<" value "<<arr1[j]<<" is multiple of 5"<<endl;
+       }
+       else
+       {
+           continue;
+       }
+   }
+    return 0;
+}
