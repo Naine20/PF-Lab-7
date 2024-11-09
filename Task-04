@@ -1,0 +1,23 @@
+//A program to input 10 numbers in an array and print array in reverse order. 
+
+Program:
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr1[10];
+   int i=0;
+   
+   while(i<10)
+   {
+       cout<<"Enter a number to store in array index "<<i<<" : ";
+       cin>>arr1[i];
+       i++;
+   }
+   int j;
+   for(j=9;j>=0;j--)
+   {
+       cout<<arr1[j]<<" ";
+   }
+    return 0;
+}
