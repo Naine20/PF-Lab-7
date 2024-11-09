@@ -1,0 +1,35 @@
+/*A program that Take ten integer inputs from user and print the following:
+•	number of positive numbers
+•	number of negative numbers
+•	number of odd numbers
+•	number of even numbers
+•	number of 0 */
+
+Program:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, positiveCount = 0, negativeCount = 0, oddCount = 0, evenCount = 0, zeroCount = 0;
+
+    cout << "Enter 10 integers: ";
+    for (int i = 0; i < 10; i++) {
+        cin >> num;
+
+        if (num > 0) positiveCount++;
+        else if (num < 0) negativeCount++;
+        else zeroCount++;
+
+        if (num != 0 && num % 2 == 0) evenCount++;
+        else if (num % 2 != 0) oddCount++;
+    }
+
+    cout << "Positive: " << positiveCount << endl;
+    cout << "Negative: " << negativeCount << endl;
+    cout << "Odd: " << oddCount << endl;
+    cout << "Even: " << evenCount << endl;
+    cout << "Zeros: " << zeroCount << endl;
+
+    return 0;
+}
+
