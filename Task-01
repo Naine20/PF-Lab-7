@@ -1,0 +1,26 @@
+//A program that dynamically allocates an array based on user input to store integer values representing scores
+
+Program:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int size,i,j;
+        
+        cout<<"Enter The size of the array: "<<endl;
+        cin>>size;
+        
+        int array[size];
+        for(i=0;i<size;i++)
+        {
+            cout<<"Enter value to store in the array: ";
+            cin>>array[i];
+        }
+        
+        for(j=0;j<size;j++)
+        {
+            cout<<array[j]<<endl;
+        }
+
+    return 0;
+}
